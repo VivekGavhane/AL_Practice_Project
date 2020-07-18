@@ -4,7 +4,7 @@ page 50102 "student list "
     ApplicationArea = All;
     UsageCategory = Lists;              // this is used to decide which type of page u want to create
     SourceTable = "student Table";
-    CardPageId = "Student Card";    // this is required in List page to know which card page we want to open when we click new, edit etc
+    CardPageId = "Student Card";    //  this is required in List page to know which card page we want to open when we click new, edit etc
 
     layout
     {
