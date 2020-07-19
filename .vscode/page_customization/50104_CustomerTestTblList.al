@@ -30,6 +30,13 @@ page 50104 "cutomer test List "
                 {
                     ApplicationArea = All;          //i think used to show field values in List Page after save
                 }
+
+                field(Amount; Amount)   // this is a flow field we can directly use like this. This is taken from  "customer test"  table.  But to use flow field in reports we need to use calc function n all
+                {
+
+                    ApplicationArea = all;
+                }
+
             }
         }
     }
@@ -52,4 +59,5 @@ page 50104 "cutomer test List "
 
     var
         myInt: Integer;
+
 }
