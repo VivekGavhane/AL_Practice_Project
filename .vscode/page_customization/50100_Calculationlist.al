@@ -42,6 +42,10 @@ page 50100 "Calculation list "
                 {
                     ApplicationArea = All;              //i think used to show field values in List Page after save
                 }
+                    field("User Id";"User Id")
+                 {
+                    ApplicationArea = All;
+                 }
             }
         }
     }

@@ -89,6 +89,11 @@ table 50100 "calculation Table"
         {
 
         }
+
+        field(15; "User Id"; Code[40])
+        {
+
+        }
     }
 
     keys

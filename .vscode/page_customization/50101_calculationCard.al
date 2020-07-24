@@ -57,6 +57,10 @@ page 50101 "Calculation Card"
                 {
                     ApplicationArea = All;
                 }
+                field("User Id"; "User Id")
+                {
+                    ApplicationArea = All;
+                }
             }
         }
     }
@@ -65,7 +69,7 @@ page 50101 "Calculation Card"
     {
         area(Processing)
         {
-            action(ActionName)
+            action(TestButton)
             {
                 ApplicationArea = All;
 
