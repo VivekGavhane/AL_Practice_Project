@@ -74,8 +74,10 @@ page 50101 "Calculation Card"
                 ApplicationArea = All;
 
                 trigger OnAction()
+                var
+                    ItemMovements: Query "Top Customer Overview1";
                 begin
-                    Message('hello');
+
                 end;
             }
         }
