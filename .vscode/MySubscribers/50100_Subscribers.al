@@ -19,6 +19,20 @@ codeunit 50100 MysubscriberCU
         Message('Sorry! No authorize to click on this button');
     end;
 
+    [EventSubscriber(ObjectType::Page, Page::"Calculation Card", 'OnModifyRecordEvent', '', false, false)]
+    local procedure OnAfterModifyCardPage(var Rec: Record "calculation Table")
+    begin
+        Message('Hi Vivek!!!!');
+    end;
+
+    [EventSubscriber(ObjectType::Page, Page::"Calculation Card", 'OnBeforeValidateEvent', 'secondno', false, false)]
+    local procedure OnBeforeValidateEventCardPage(var Rec: Record "calculation Table")
+    begin
+        Message('This is OnBeforeValidateEvent on second no');
+    end;
+
+
+
 
     var
         myInt: Integer;
