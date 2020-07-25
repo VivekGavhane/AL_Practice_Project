@@ -75,7 +75,7 @@ page 50101 "Calculation Card"
 
                 trigger OnAction()
                 var
-                    ItemMovements: Query "Top Customer Overview1";
+
                 begin
 
                 end;
