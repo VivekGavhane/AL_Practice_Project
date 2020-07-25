@@ -3,6 +3,18 @@ pageextension 50102 SalesOrderQuantityButton extends "Sales Order"      // for e
     layout
     {
         // Add changes to page layout here
+
+        addafter("Posting Date")
+        {
+            field("Reference_No."; "Reference_No.")
+            {
+                ApplicationArea = all;
+                trigger OnValidate()
+                begin
+                    MyPUbliserh.CheckRef_SalesOrderLenght("Reference_No.");
+                end;
+            }
+        }
     }
 
     actions
@@ -39,4 +51,5 @@ pageextension 50102 SalesOrderQuantityButton extends "Sales Order"      // for e
         myInt: Integer;
         saleslIneRec: Record "Sales Line";
         customerRec: Record Customer;
+        MyPUbliserh: Codeunit MyPublisherCodeunit;
 }

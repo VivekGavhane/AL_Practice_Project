@@ -3,6 +3,13 @@ pageextension 50100 PostedSalInvExt extends "Posted Sales Invoice"      // for e
     layout
     {
         // Add changes to page layout here
+        addafter("Posting Date")
+        {
+            field(Reference_No; Reference_No)
+            {
+                ApplicationArea = all;
+            }
+        }
     }
 
     actions

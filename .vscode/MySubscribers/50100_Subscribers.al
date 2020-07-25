@@ -31,6 +31,21 @@ codeunit 50100 MysubscriberCU
         Message('This is OnBeforeValidateEvent on second no');
     end;
 
+    [EventSubscriber(ObjectType::Codeunit, Codeunit::MyPublisherCodeunit, 'CheckRef_SalesOrderLenght', '', false, false)]
+    local procedure checklengRefNo(RefNo: Code[10])
+    begin
+        if StrLen(RefNo) <> 10 then
+            Message('Reference no. lenght should be 10');
+    end;
+
+    [EventSubscriber(ObjectType::Codeunit, Codeunit::"Sales-Post", 'OnBeforeSalesInvHeaderInsert', '', false, false)]
+    local procedure OnbeforesalesInvInsert(var SalesInvHeader: Record "Sales Invoice Header"; salesHeader: Record "Sales Header")
+
+    begin
+        SalesInvHeader.Reference_No := salesHeader."Reference_No.";
+    end;
+
+
 
 
 
