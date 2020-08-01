@@ -31,7 +31,7 @@ pageextension 50102 SalesOrderQuantityButton extends "Sales Order"      // for e
                 ApplicationArea = all;
                 trigger OnAction()
                 begin
-                    Message('Hello');
+                    Message('Hello Vivek 123 hi');
                     saleslIneRec.Reset();               // every time we need to reset the record before use
                     saleslIneRec.SetRange("Document Type", "Document Type");  // "Document Type"  is of sales line table
                     saleslIneRec.SetRange("Document No.", "No.");  // here  "No."   is from Header page  & "Document No."  is from  sales line which should be equal as we r fetching line items for that sales order
