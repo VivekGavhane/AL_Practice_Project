@@ -57,5 +57,5 @@ page 50107 "sales orders New"
 
     }
     var
-        slaeorder: Page "Sales Order";
+       // slaeorder: Page "Sales Order";
 }

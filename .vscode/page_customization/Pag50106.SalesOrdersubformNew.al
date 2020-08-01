@@ -84,5 +84,5 @@ page 50106 "Sales Order subform New"
         }
     }
     var
-        salesordersubform: Page "Sales Order Subform";
+       // salesordersubform: Page "Sales Order Subform";
 }
